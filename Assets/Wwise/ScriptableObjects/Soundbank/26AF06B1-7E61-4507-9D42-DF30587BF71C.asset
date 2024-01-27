@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b9d8c6b994b2e41b1701487e687fd8, type: 3}
+  m_Name: 26AF06B1-7E61-4507-9D42-DF30587BF71C
+  m_EditorClassIdentifier: 
+  objectName: VivaldiSpring
+  id: 1804423153
+  guid: 26AF06B1-7E61-4507-9D42-DF30587BF71C

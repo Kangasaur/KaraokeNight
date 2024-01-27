@@ -1,6 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6F13F340-006B-4033-91ED-80563A6A327F}" SchemaVersion="110">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{6F13F340-006B-4033-91ED-80563A6A327F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6F13F340-006B-4033-91ED-80563A6A327F}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="Vivaldi Spring" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" ShortID="149564658">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="90"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="vivaldi-spring-0" ID="{844444AE-475F-4ABF-8D87-0792199E7145}" ShortID="779698286">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="93333.3333333333"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="vivaldi-spring-normal-strings" ID="{0C6569FC-8F7C-4A22-84FD-6039FE5072A1}" ShortID="122326010">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="vivaldi-spring-normal-strings" ID="{894D34B0-F524-4DA4-B5F2-F35751DC3420}">
+											<Language>SFX</Language>
+											<AudioFile>vivaldi-spring-normal-strings.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="360853884"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{67D92EFF-D5A0-4AB6-9198-2BE467AE4C60}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList/>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{1CCE7F96-CEDF-4B9B-B031-1592A7E6DBC4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="vivaldi-spring-normal-strings" ID="{7FD59D30-535A-4932-9CD3-CABBD14B25CA}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="88000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="2666.66666666667"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="vivaldi-spring-normal-strings" ID="{894D34B0-F524-4DA4-B5F2-F35751DC3420}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Midi" ID="{438AD824-DD88-4AB9-8AAA-3E19E6E4D868}" ShortID="981983319">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MidiFileSource Name="vivaldi-spring-melody" ID="{E37D83E0-2E3E-4717-865A-8EE968A7CF58}" ShortID="663723813">
+											<Language>SFX</Language>
+											<MidiFile>vivaldi-spring-melody.mid</MidiFile>
+											<MediaIDList>
+												<MediaID ID="143987735"/>
+											</MediaIDList>
+										</MidiFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{35EEFEE5-2F5C-423E-800D-4A2AD1833567}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{7625DB09-01C2-4398-BC5F-FC5096DE184B}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClipMidi Name="vivaldi-spring-melody" ID="{AB79167A-6714-4D08-B4A6-3A055EE0BF9D}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="82972.2222222222"/>
+																				<Property Name="PlayAt" Type="Real64" Value="2333.33333333333"/>
+																			</PropertyList>
+																			<MidiSourceRef Name="vivaldi-spring-melody" ID="{E37D83E0-2E3E-4717-865A-8EE968A7CF58}"/>
+																		</MusicClipMidi>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{95E06198-E856-4859-A289-48ED49437839}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="2666.66666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{A42B7688-0C7C-4D61-B597-5B96FA8812DB}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="90666.6666666668"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{DEAFA4D6-687C-44FC-A011-8890970ADEC9}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{73CBC84F-9171-49D5-A6FB-E91C1EB99462}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{C6E5037C-7665-4996-8F74-B3E62CE6A9A9}" ShortID="165971237"/>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
