@@ -54,7 +54,6 @@ public class AudioAnalyzer : MonoBehaviour
     private void AnalyzeSound()
     {
         audioSource.GetOutputData(samples, 0);
-
         //Getting the RMS.
         int i = 0;
         float sum = 0;

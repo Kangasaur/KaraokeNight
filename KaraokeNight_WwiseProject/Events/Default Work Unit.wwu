@@ -8,7 +8,7 @@
 						<Action Name="" ID="{6EC2722C-2CD9-45CF-87A2-0AEEDD841E3A}" ShortID="15294825">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Vivaldi Spring" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" WorkUnitID="{6F13F340-006B-4033-91ED-80563A6A327F}"/>
+									<ObjectRef Name="Songs" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" WorkUnitID="{6F13F340-006B-4033-91ED-80563A6A327F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -20,6 +20,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="vivaldi-spring-normal-strings" ID="{D9B3B40D-83A8-4BB1-AFBC-851C44C62937}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VivaldiSpring" ID="{4A818E1D-50ED-41DB-8F92-92075ED13CD5}">
+					<ChildrenList>
+						<Action Name="" ID="{668AFD71-4AF1-41EE-B44A-A43AD7E65B0B}" ShortID="815732229">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VivaldiSpring" ID="{844444AE-475F-4ABF-8D87-0792199E7145}" WorkUnitID="{6F13F340-006B-4033-91ED-80563A6A327F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

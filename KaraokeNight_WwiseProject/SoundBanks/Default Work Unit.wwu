@@ -6,7 +6,7 @@
 				<SoundBank Name="VivaldiSpring" ID="{26AF06B1-7E61-4507-9D42-DF30587BF71C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_vivaldi_spring_normal_strings" ID="{B7D1EE87-31D4-407B-BB05-6B0ECDAD14C0}" WorkUnitID="{E0653F9B-3F0E-4255-AB31-D96EFC7F6153}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Vivaldi_Spring" ID="{77A6143A-1BEC-4D6A-9C10-2F4962E50CC3}" WorkUnitID="{E0653F9B-3F0E-4255-AB31-D96EFC7F6153}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_VivaldiSpring" ID="{4A818E1D-50ED-41DB-8F92-92075ED13CD5}" WorkUnitID="{E0653F9B-3F0E-4255-AB31-D96EFC7F6153}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

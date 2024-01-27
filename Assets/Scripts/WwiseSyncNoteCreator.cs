@@ -7,6 +7,8 @@ public class WwiseSyncNoteCreator : MonoBehaviour
 {
     public AK.Wwise.Event noteHighwayWwiseEvent;
 
+    public NoteGenerator noteGenerator;
+
     [HideInInspector] public float secondsPerBeat;
 
     //Unity events are pretty flexible - you've already used them if you've used UI buttons
@@ -76,7 +78,7 @@ public class WwiseSyncNoteCreator : MonoBehaviour
         //check if it's music callback (beat, marker, bar, grid etc)
         if (in_info is AkMusicSyncCallbackInfo)
         {
-            //Debug.Log("music callback");
+            Debug.Log("music callback");
             _musicInfo = (AkMusicSyncCallbackInfo)in_info;
 
             //we're going to use this switchboard to fire off different events depending on wwise sends
@@ -127,7 +129,7 @@ public class WwiseSyncNoteCreator : MonoBehaviour
             if (_midiInfo.byType == AkMIDIEventTypes.NOTE_ON)
             {
                 //Use _midiInfo.byOnOffNote to translate to pitch
-                OnCueStart.Invoke();
+                noteGenerator.GenerateCueStart(_midiInfo.byOnOffNote);
             }
             //called when midi note is released
             else if (_midiInfo.byType == AkMIDIEventTypes.NOTE_OFF)

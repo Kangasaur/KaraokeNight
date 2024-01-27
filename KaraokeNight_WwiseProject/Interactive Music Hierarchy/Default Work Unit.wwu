@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{6F13F340-006B-4033-91ED-80563A6A327F}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicPlaylistContainer Name="Vivaldi Spring" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" ShortID="149564658">
+				<MusicPlaylistContainer Name="Songs" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" ShortID="149564658">
 					<PropertyList>
 						<Property Name="Tempo" Type="Real64" Value="90"/>
 					</PropertyList>
@@ -11,12 +11,15 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
 						</Reference>
+						<Reference Name="MidiTarget">
+							<ObjectRef Name="miditarget" ID="{51C870D1-6B21-490C-B902-398EF2B0B571}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicSegment Name="vivaldi-spring-0" ID="{844444AE-475F-4ABF-8D87-0792199E7145}" ShortID="779698286">
+						<MusicSegment Name="VivaldiSpring" ID="{844444AE-475F-4ABF-8D87-0792199E7145}" ShortID="779698286">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="93333.3333333333"/>
 							</PropertyList>
@@ -49,7 +52,6 @@
 											<PropertyList>
 												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
@@ -170,7 +172,16 @@
 						</MusicTransition>
 					</TransitionList>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{C6E5037C-7665-4996-8F74-B3E62CE6A9A9}" ShortID="165971237"/>
+						<MusicPlaylistItem Name="" ID="{C6E5037C-7665-4996-8F74-B3E62CE6A9A9}" ShortID="165971237">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{31853FE9-F5B7-469D-AD03-DEA4E725A25D}" ShortID="506958038">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="VivaldiSpring" ID="{844444AE-475F-4ABF-8D87-0792199E7145}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
 			</ChildrenList>

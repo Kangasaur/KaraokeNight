@@ -794,7 +794,8 @@ MonoBehaviour:
   noteHighwayWwiseEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e3449f5558c8c56469d090b0d4133475, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 2a3320b23c0a79a43a4493063c9c6bf4, type: 2}
+  noteGenerator: {fileID: 988570781}
   secondsPerBeat: 0
   OnCue:
     m_PersistentCalls:

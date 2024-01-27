@@ -13,8 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_VIVALDI_SPRING = 1711682853U;
         static const AkUniqueID PLAY_VIVALDI_SPRING_NORMAL_STRINGS = 1983435814U;
+        static const AkUniqueID PLAY_VIVALDISPRING = 2625729712U;
     } // namespace EVENTS
 
     namespace STATES
@@ -36,6 +36,11 @@ namespace AK
         } // namespace PITCH
 
     } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PITCHCHANGE = 620616789U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
