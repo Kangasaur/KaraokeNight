@@ -92,5 +92,9 @@ public class AudioAnalyzer : MonoBehaviour
         }
 
         pitchValue = freqN * (sampleRate) / SAMPLE_SIZE;
+
+        pitchValue = (pitchValue * 500f) / 10000f;
+
+        pitchValue = Mathf.Round(pitchValue / 5.0f) * 5.0f;
     }
 }
