@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F1CE1485-43B4-87F3-8745-A8B2BB096B27}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A270EFA5-5584-5850-6F88-126C4DFDB8CC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -38,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{68F0D69F-5CCD-9A76-43A3-CE37BF7733F7}">
+		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{658753F0-3442-A8F7-FF07-D6EBFF04ABA3}">
 			<ShortName>VivaldiSpring</ShortName>
 			<Path>VivaldiSpring.bnk</Path>
 			<Media>
@@ -55,17 +55,27 @@
 					<CachePath>SFX/vivaldi-spring-normal-strings_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="550094948" Name="Synth One" LibName="Wwise Synth One" LibId="9699330"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="1711682853" Name="Play_Vivaldi_Spring" DurationType="OneShot" DurationMin="0" DurationMax="0">
-					<MediaRefs>
-						<MediaRef Id="143987735"/>
-						<MediaRef Id="360853884"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1983435814" Name="Play_vivaldi_spring_normal_strings" DurationType="OneShot" DurationMin="88" DurationMax="88">
 					<MediaRefs>
 						<MediaRef Id="1039120711"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="2625729712" Name="Play_VivaldiSpring" DurationType="OneShot" DurationMin="90.666664" DurationMax="90.666664">
+					<MediaRefs>
+						<MediaRef Id="143987735"/>
+						<MediaRef Id="360853884"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="550094948"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -73,5 +83,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3BECC227-27C7-274C-EC44-55F2075843AF}</FileHash>
+	<FileHash>{C6EEF327-145B-97F6-C9F6-C64006333058}</FileHash>
 </SoundBanksInfo>
