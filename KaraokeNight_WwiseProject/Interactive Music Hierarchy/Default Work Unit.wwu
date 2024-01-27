@@ -170,7 +170,16 @@
 						</MusicTransition>
 					</TransitionList>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{C6E5037C-7665-4996-8F74-B3E62CE6A9A9}" ShortID="165971237"/>
+						<MusicPlaylistItem Name="" ID="{C6E5037C-7665-4996-8F74-B3E62CE6A9A9}" ShortID="165971237">
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{31853FE9-F5B7-469D-AD03-DEA4E725A25D}" ShortID="506958038">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="vivaldi-spring-0" ID="{844444AE-475F-4ABF-8D87-0792199E7145}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
 			</ChildrenList>

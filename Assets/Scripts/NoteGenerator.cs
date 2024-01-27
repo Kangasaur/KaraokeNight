@@ -37,11 +37,18 @@ public class NoteGenerator : MonoBehaviour
 
         currentNote = fallingGem;
 
+        if (currentNote.sustain == true)
+        {
+            GenerateCueEnd(currentNote.note);
+        }
+
         SetGemTimings(fallingGem);
     }
 
     public void GenerateCueEnd(int midiNote)
     {
+        
+        
         float yPosition = (midiNote / 10) - 4;
         GameObject newCue = Instantiate(noteEndPrefab, new Vector3(5.5f, yPosition, -5), Quaternion.identity);
 

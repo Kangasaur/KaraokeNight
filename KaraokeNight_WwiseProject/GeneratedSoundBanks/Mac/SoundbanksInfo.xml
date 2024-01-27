@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{163825CA-17C1-34BB-031A-3113D0C70447}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0A02A908-754C-185F-78DF-89D16AB85A31}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,6 +21,9 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="620616789" Name="PitchChange"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="1908158473" Name="Pitch">
 					<States>
@@ -35,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{F1ED8CC6-7E3A-DC59-4E16-8302FEDB6100}">
+		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{68F0D69F-5CCD-9A76-43A3-CE37BF7733F7}">
 			<ShortName>VivaldiSpring</ShortName>
 			<Path>VivaldiSpring.bnk</Path>
 			<Media>
@@ -65,7 +68,10 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="620616789" Name="PitchChange"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{36AF0D8A-19A7-86F2-8F0B-9A8D1B5FCBB2}</FileHash>
+	<FileHash>{E2D83572-16DB-E489-1EF8-169182517E0B}</FileHash>
 </SoundBanksInfo>

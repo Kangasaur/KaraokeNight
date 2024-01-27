@@ -795,6 +795,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: e3449f5558c8c56469d090b0d4133475, type: 2}
+  noteGenerator: {fileID: 988570781}
   secondsPerBeat: 0
   OnCue:
     m_PersistentCalls:
