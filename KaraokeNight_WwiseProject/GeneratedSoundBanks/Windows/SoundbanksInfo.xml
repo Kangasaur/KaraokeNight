@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{EAE9AF94-F7BF-C1AD-4E37-19B4EC73A913}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<StateGroups>
+				<StateGroup Id="1908158473" Name="Pitch">
+					<States>
+						<State Id="279057275" Name="PlusThree"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1160234136" Name="Normal"/>
+						<State Id="1306997581" Name="PlusFour"/>
+						<State Id="1324760889" Name="PlusFive"/>
+						<State Id="3104692251" Name="PlusOne"/>
+						<State Id="3257412169" Name="PlusTwo"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{F1ED8CC6-7E3A-DC59-4E16-8302FEDB6100}">
+			<ShortName>VivaldiSpring</ShortName>
+			<Path>VivaldiSpring.bnk</Path>
+			<Media>
+				<File Id="143987735" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vivaldi-spring-melody.mid</ShortName>
+					<CachePath>SFX/vivaldi-spring-melody_7A7D82A8.wem</CachePath>
+				</File>
+				<File Id="360853884" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vivaldi-spring-normal-strings.wav</ShortName>
+					<CachePath>SFX/vivaldi-spring-normal-strings_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1039120711" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>vivaldi-spring-normal-strings.wav</ShortName>
+					<CachePath>SFX/vivaldi-spring-normal-strings_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1711682853" Name="Play_Vivaldi_Spring" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<MediaRefs>
+						<MediaRef Id="143987735"/>
+						<MediaRef Id="360853884"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1983435814" Name="Play_vivaldi_spring_normal_strings" DurationType="OneShot" DurationMin="88" DurationMax="88">
+					<MediaRefs>
+						<MediaRef Id="1039120711"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{50D24F9B-5A61-B193-435B-6FBBBD32AFE8}</FileHash>
+</SoundBanksInfo>

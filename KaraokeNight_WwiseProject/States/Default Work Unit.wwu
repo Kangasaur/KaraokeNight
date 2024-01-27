@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F36741C-A474-4598-9B67-A4B6BAF9C15B}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{7F36741C-A474-4598-9B67-A4B6BAF9C15B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Pitch" ID="{DC54F6EA-33E0-4C2F-832A-056F203424E7}">
+					<ChildrenList>
+						<State Name="None" ID="{682926BD-FAF1-4E36-AE36-525F4504BFDB}"/>
+						<State Name="Normal" ID="{2CCAE440-D725-4EF1-AF65-A5FAFF5C78B0}"/>
+						<State Name="PlusOne" ID="{95568E16-0112-43A7-AA0F-518108859E78}"/>
+						<State Name="PlusTwo" ID="{C5F52750-9517-446E-8EF2-C619D9379BD7}"/>
+						<State Name="PlusThree" ID="{BCF35AD4-799C-4847-BCFB-B3F6C0F3C3BE}"/>
+						<State Name="PlusFour" ID="{CA8EE8F6-1292-4944-AD26-159E0B5BB484}"/>
+						<State Name="PlusFive" ID="{8C6C40B2-E538-4962-A7A7-87E2F2FBE78D}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

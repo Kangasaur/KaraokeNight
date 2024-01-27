@@ -1,0 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1908158473	Pitch			\Default Work Unit\Pitch	
+
+State	ID	Name	State Group			Notes
+	279057275	PlusThree	Pitch			
+	748895195	None	Pitch			
+	1160234136	Normal	Pitch			
+	1306997581	PlusFour	Pitch			
+	1324760889	PlusFive	Pitch			
+	3104692251	PlusOne	Pitch			
+	3257412169	PlusTwo	Pitch			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

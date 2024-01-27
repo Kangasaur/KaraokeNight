@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E0653F9B-3F0E-4255-AB31-D96EFC7F6153}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E0653F9B-3F0E-4255-AB31-D96EFC7F6153}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Vivaldi_Spring" ID="{77A6143A-1BEC-4D6A-9C10-2F4962E50CC3}">
+					<ChildrenList>
+						<Action Name="" ID="{6EC2722C-2CD9-45CF-87A2-0AEEDD841E3A}" ShortID="15294825">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vivaldi Spring" ID="{AFABEE7E-31CC-4A8B-9B2B-421B464F5906}" WorkUnitID="{6F13F340-006B-4033-91ED-80563A6A327F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_vivaldi_spring_normal_strings" ID="{B7D1EE87-31D4-407B-BB05-6B0ECDAD14C0}">
+					<ChildrenList>
+						<Action Name="" ID="{E19751DD-FCB8-41DB-8381-EBCA5CADC56C}" ShortID="821920762">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vivaldi-spring-normal-strings" ID="{D9B3B40D-83A8-4BB1-AFBC-851C44C62937}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
