@@ -1,12 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1711682853	Play_Vivaldi_Spring			\Default Work Unit\Play_Vivaldi_Spring	
 	1983435814	Play_vivaldi_spring_normal_strings			\Default Work Unit\Play_vivaldi_spring_normal_strings	
+	2625729712	Play_VivaldiSpring			\Default Work Unit\Play_VivaldiSpring	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	620616789	PitchChange			\Default Work Unit\PitchChange	
 
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	728862216	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	550094948	Synth One	Wwise Synth One		\Actor-Mixer Hierarchy\Default Work Unit\miditarget\Synth One	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	143987735	Midi	C:\Users\cosmi\Documents\Git\KaraokeNight\KaraokeNight_WwiseProject\.cache\Windows\SFX\vivaldi-spring-melody_7A7D82A8.wem		\Interactive Music Hierarchy\Default Work Unit\Vivaldi Spring\vivaldi-spring-0\Midi		2065
-	360853884	vivaldi-spring-normal-strings	C:\Users\cosmi\Documents\Git\KaraokeNight\KaraokeNight_WwiseProject\.cache\Windows\SFX\vivaldi-spring-normal-strings_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Vivaldi Spring\vivaldi-spring-0\vivaldi-spring-normal-strings		15523296
+	143987735	Midi	C:\Users\cosmi\Documents\Git\KaraokeNight\KaraokeNight_WwiseProject\.cache\Windows\SFX\vivaldi-spring-melody_7A7D82A8.wem		\Interactive Music Hierarchy\Default Work Unit\Songs\VivaldiSpring\Midi		2065
+	360853884	vivaldi-spring-normal-strings	C:\Users\cosmi\Documents\Git\KaraokeNight\KaraokeNight_WwiseProject\.cache\Windows\SFX\vivaldi-spring-normal-strings_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Songs\VivaldiSpring\vivaldi-spring-normal-strings		15523296
 	1039120711	vivaldi-spring-normal-strings	C:\Users\cosmi\Documents\Git\KaraokeNight\KaraokeNight_WwiseProject\.cache\Windows\SFX\vivaldi-spring-normal-strings_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\vivaldi-spring-normal-strings		15523296
 
