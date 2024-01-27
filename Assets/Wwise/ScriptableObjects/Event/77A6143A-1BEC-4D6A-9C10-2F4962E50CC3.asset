@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792e6f3226261754b87ca2e79ba99bd8, type: 3}
+  m_Name: 77A6143A-1BEC-4D6A-9C10-2F4962E50CC3
+  m_EditorClassIdentifier: 
+  objectName: Play_Vivaldi_Spring
+  id: 1711682853
+  guid: 77A6143A-1BEC-4D6A-9C10-2F4962E50CC3

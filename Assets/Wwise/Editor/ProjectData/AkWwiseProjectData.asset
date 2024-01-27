@@ -1,0 +1,338 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcdc4027ff7f6be458ca980609db9693, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e6ed1dc032143d4db261764da7d9a18e
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: e6ed1dc032143d4db261764da7d9a18e
+    GuidInternal: 
+    m_lastTime: -8584952338804241388
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: abd0eb295fdf23478ff3a4684c70fab8
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: abd0eb295fdf23478ff3a4684c70fab8
+    GuidInternal: 
+    m_lastTime: -8584952338807137280
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: abd0eb295fdf23478ff3a4684c70fab8
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 645b6825cf31a24c89926c88d72993bf
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 645b6825cf31a24c89926c88d72993bf
+    GuidInternal: 
+    m_lastTime: -8584952199138441537
+    List:
+    - name: VivaldiSpring
+      guid: b106af26617e07459d42df30587bf71c
+      id: 1804423153
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 645b6825cf31a24c89926c88d72993bf
+      - ElementName: VivaldiSpring
+        ObjectType: 7
+        guid: b106af26617e07459d42df30587bf71c
+      Path: SoundBanks\Default Work Unit\VivaldiSpring
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9b3f65e00e3f5542ab31d96efc7f6153
+    ParentPath: Events\Default Work Unit
+    guid: 9b3f65e00e3f5542ab31d96efc7f6153
+    GuidInternal: 
+    m_lastTime: -8584952201147985525
+    List:
+    - name: Play_Vivaldi_Spring
+      guid: 3a14a677ec1b6a4d9c102f4962e50cc3
+      id: 1711682853
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b3f65e00e3f5542ab31d96efc7f6153
+      - ElementName: Play_Vivaldi_Spring
+        ObjectType: 3
+        guid: 3a14a677ec1b6a4d9c102f4962e50cc3
+      Path: Events\Default Work Unit\Play_Vivaldi_Spring
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_vivaldi_spring_normal_strings
+      guid: 87eed1b7d4317b40bb056b0ecdad14c0
+      id: 1983435814
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b3f65e00e3f5542ab31d96efc7f6153
+      - ElementName: Play_vivaldi_spring_normal_strings
+        ObjectType: 3
+        guid: 87eed1b7d4317b40bb056b0ecdad14c0
+      Path: Events\Default Work Unit\Play_vivaldi_spring_normal_strings
+      maxAttenuation: 0
+      maxDuration: 88
+      minDuration: 88
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 8c0aba38927f7f429525019e39ea1456
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 8c0aba38927f7f429525019e39ea1456
+    GuidInternal: 
+    m_lastTime: -8584952180960427501
+    List:
+    - name: PitchChange
+      guid: aaae48141164294495638747116f6fa1
+      id: 620616789
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8c0aba38927f7f429525019e39ea1456
+      - ElementName: PitchChange
+        ObjectType: 13
+        guid: aaae48141164294495638747116f6fa1
+      Path: Game Parameters\Default Work Unit\PitchChange
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1c74367f74a498459b67a4b6baf9c15b
+    ParentPath: States\Default Work Unit
+    guid: 1c74367f74a498459b67a4b6baf9c15b
+    GuidInternal: 
+    m_lastTime: -8584952259685602976
+    List:
+    - name: Pitch
+      guid: eaf654dce0332f4c832a056f203424e7
+      id: 1908158473
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1c74367f74a498459b67a4b6baf9c15b
+      - ElementName: Pitch
+        ObjectType: 9
+        guid: eaf654dce0332f4c832a056f203424e7
+      Path: States\Default Work Unit\Pitch
+      values:
+      - name: None
+        guid: bd262968f1fa364eae36525f4504bfdb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: None
+          ObjectType: 8
+          guid: bd262968f1fa364eae36525f4504bfdb
+      - name: Normal
+        guid: 40e4ca2c25d7f14eaf65a5faff5c78b0
+        id: 1160234136
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: Normal
+          ObjectType: 8
+          guid: 40e4ca2c25d7f14eaf65a5faff5c78b0
+      - name: PlusFive
+        guid: b2406c8c38e56249a7a787e2f2fbe78d
+        id: 1324760889
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: PlusFive
+          ObjectType: 8
+          guid: b2406c8c38e56249a7a787e2f2fbe78d
+      - name: PlusFour
+        guid: f6e88eca92124449ad26159e0b5bb484
+        id: 1306997581
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: PlusFour
+          ObjectType: 8
+          guid: f6e88eca92124449ad26159e0b5bb484
+      - name: PlusOne
+        guid: 168e56951201a743aa0f518108859e78
+        id: 3104692251
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: PlusOne
+          ObjectType: 8
+          guid: 168e56951201a743aa0f518108859e78
+      - name: PlusThree
+        guid: d45af3bc9c794748bcfbb3f6c0f3c3be
+        id: 279057275
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: PlusThree
+          ObjectType: 8
+          guid: d45af3bc9c794748bcfbb3f6c0f3c3be
+      - name: PlusTwo
+        guid: 5027f5c517956e448ef2c619d9379bd7
+        id: 3257412169
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 1c74367f74a498459b67a4b6baf9c15b
+        - ElementName: Pitch
+          ObjectType: 9
+          guid: eaf654dce0332f4c832a056f203424e7
+        - ElementName: PlusTwo
+          ObjectType: 8
+          guid: 5027f5c517956e448ef2c619d9379bd7
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 37cffd086c7a4f4aa863ba1bbad47a21
+    ParentPath: Switches\Default Work Unit
+    guid: 37cffd086c7a4f4aa863ba1bbad47a21
+    GuidInternal: 
+    m_lastTime: -8584952338806680401
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a084185552073e4bb701bd16bf723044
+    ParentPath: Triggers\Default Work Unit
+    guid: a084185552073e4bb701bd16bf723044
+    GuidInternal: 
+    m_lastTime: -8584952338804912346
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000b0000000c000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
