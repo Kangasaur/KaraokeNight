@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NoteEvaluator : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class NoteEvaluator : MonoBehaviour
     public float pitchWindow = 70f; //Scoring circles for the pitch tracking.
 
     public int score; //You know what this is, don't be stupid.
+    public TMP_Text scoreDisplay;
 
     public AudioAnalyzer input;
 
@@ -29,5 +31,6 @@ public class NoteEvaluator : MonoBehaviour
                 score += 10 * (int) (pitchWindow - (targetPitch - input.pitchValue));
             }
         }
+        scoreDisplay.text = score.ToString();
     }
 }

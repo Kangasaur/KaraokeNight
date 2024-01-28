@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.30940965, g: 0.0003627966, b: 0.6402165, a: 1}
+  m_IndirectSpecularColor: {r: 0.30953136, g: 0.0003627966, b: 0.6402339, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -654,7 +654,7 @@ MonoBehaviour:
   rmsValue: 0
   dbValue: 0
   pitchValue: 0
-  avgRange: 0
+  avgRange: 10
   avgValues: []
   avgSum: 0
 --- !u!82 &1127927075
@@ -668,10 +668,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 1224724681}
   - component: {fileID: 1224724680}
   - component: {fileID: 1224724682}
+  - component: {fileID: 1224724683}
   m_Layer: 5
   m_Name: SCORE
   m_TagString: Untagged
@@ -902,6 +903,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionJitter: 0.001
   rotationJitter: 0
+--- !u!114 &1224724683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224724678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ef661fb7ecb15949aca76351d2655ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPitch: 0
+  pitchWindow: 70
+  score: 0
+  scoreDisplay: {fileID: 1224724680}
+  input: {fileID: 1127927074}
 --- !u!1 &1275396298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1434,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1225968784546086103, guid: 29201f9fc1622b2488681794e540c1cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2203987685985340216, guid: 29201f9fc1622b2488681794e540c1cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5
@@ -1460,59 +1482,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: pointer
       objectReference: {fileID: 0}
+    - target: {fileID: 7774431288165164462, guid: 29201f9fc1622b2488681794e540c1cb, type: 3}
+      propertyPath: input
+      value: 
+      objectReference: {fileID: 1127927074}
+    - target: {fileID: 7774431288165164462, guid: 29201f9fc1622b2488681794e540c1cb, type: 3}
+      propertyPath: vertOffset
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29201f9fc1622b2488681794e540c1cb, type: 3}
---- !u!1 &1640630740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1640630741}
-  - component: {fileID: 1640630742}
-  m_Layer: 0
-  m_Name: NoteEvaluator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1640630741
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640630740}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1640630742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640630740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ef661fb7ecb15949aca76351d2655ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPitch: 0
-  pitchWindow: 30
-  score: 0
-  input: {fileID: 1127927074}
 --- !u!1 &1695492556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,7 +1786,6 @@ SceneRoots:
   - {fileID: 1844521062}
   - {fileID: 988570782}
   - {fileID: 469601454}
-  - {fileID: 1640630741}
   - {fileID: 161217027}
   - {fileID: 200504572}
   - {fileID: 1638701650}

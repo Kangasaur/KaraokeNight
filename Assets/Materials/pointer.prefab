@@ -288,6 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2203987685985340216}
   - component: {fileID: 1225968784546086103}
+  - component: {fileID: 7774431288165164462}
   m_Layer: 5
   m_Name: pointer
   m_TagString: Untagged
@@ -327,6 +328,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionJitter: 0
   rotationJitter: 0
+--- !u!114 &7774431288165164462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4470585095514398927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b6314462cb2e4bbec950afd12315b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pPos: {x: 0, y: 0}
+  input: {fileID: 0}
 --- !u!1 &5624009337408784052
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,14 +10,18 @@ public class PitchMovement : MonoBehaviour
      * It will also be score based on its relation to the target pitch, although that function may be handled in a different script.
      */
 
-    public Vector2 pPos;
+    public Vector3 pPos;
+
+    public AudioAnalyzer input;
+
+    public float vertOffset;
 
     private void Update()
     {
-        GameObject mainCamera = GameObject.Find("Main Camera");
-        AudioAnalyzer audioAnalyze = mainCamera.GetComponent<AudioAnalyzer>();
+        AudioAnalyzer audioAnalyze = input.GetComponent<AudioAnalyzer>();
+        Debug.Log(audioAnalyze.pitchValue);
 
-        pPos = new Vector2(transform.position.x, audioAnalyze.pitchValue / 50);
+        pPos = new Vector3(transform.position.x, (audioAnalyze.pitchValue / 50) - vertOffset, transform.position.z);
         transform.position = pPos;
     }
 }
