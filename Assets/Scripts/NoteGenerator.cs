@@ -26,21 +26,24 @@ public class NoteGenerator : MonoBehaviour
 
     public void GenerateCueStart(int midiNote)
     {
-        float yPosition = (midiNote / 10) - 4;
+        if (currentNote != null && currentNote.sustain == true)
+        {
+            GenerateCueEnd(currentNote.note);
+        }
+
+        float yPosition = (midiNote / 6f) - 13.6667f;
         GameObject newCue = Instantiate(noteStartPrefab, new Vector3(5.5f, yPosition, -5), Quaternion.identity);
 
         FallingNote fallingGem = newCue.GetComponent<FallingNote>();
 
         fallingGem.sustain = true;
+        fallingGem.note = midiNote;
         fallingGem.sustainChild = newCue.GetComponentInChildren<Dummy>().gameObject.transform;
         fallingGem.sustainType = FallingNote.SustainType.start;
 
         currentNote = fallingGem;
 
-        if (currentNote.sustain == true)
-        {
-            GenerateCueEnd(currentNote.note);
-        }
+        
 
         SetGemTimings(fallingGem);
     }
@@ -49,15 +52,19 @@ public class NoteGenerator : MonoBehaviour
     {
         
         
-        float yPosition = (midiNote / 10) - 4;
+        float yPosition = (midiNote / 6f) - 13.6667f;
         GameObject newCue = Instantiate(noteEndPrefab, new Vector3(5.5f, yPosition, -5), Quaternion.identity);
 
         FallingNote fallingGem = newCue.GetComponent<FallingNote>();
+        fallingGem.note = midiNote;
+
 
         fallingGem.sustainType = FallingNote.SustainType.end;
 
         currentNote.sustain = false;
 
+        print(currentNote.note);
+        print(newCue.transform.position);
         SetGemTimings(fallingGem);
     }
 
