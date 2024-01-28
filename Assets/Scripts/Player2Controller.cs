@@ -18,11 +18,11 @@ public class Player2Controller : MonoBehaviour
         {
             if (Input.mouseScrollDelta.y > 0)
             {
-                pitchOffset = 5f;
+                pitchOffset += 5f;
             }
             else if (Input.mouseScrollDelta.y < 0)
             {
-                pitchOffset = -5f;
+                pitchOffset -= 5f;
             }
             input.pitchValue += pitchOffset;
         }

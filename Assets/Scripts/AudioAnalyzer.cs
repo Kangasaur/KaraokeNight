@@ -100,20 +100,20 @@ public class AudioAnalyzer : MonoBehaviour
 
         pitchValue = freqN * (sampleRate) / SAMPLE_SIZE;
 
-        pitchValue = ((pitchValue * 430f) / 11000f) + 170f;
+        pitchValue = ((pitchValue * 350f) / 11500f) + 200f;
 
         pitchValue = Mathf.Round(pitchValue / 5.0f) * 5.0f;
 
-        //Averaging out up to five frames worth of values. Resets after those five frames.
+        //Averaging out up to five frames worth of values.Resets after those five frames.
         avgValues.Add(pitchValue);
-        for(i = 0; i < avgValues.Count; i++)
+        for (i = 0; i < avgValues.Count; i++)
         {
             avgSum += avgValues[i];
             pitchValue = avgSum / avgValues.Count;
         }
         avgSum = 0f;
 
-        if(avgValues.Count >= avgRange)
+        if (avgValues.Count >= avgRange)
         {
             avgValues.Clear();
         }

@@ -36,6 +36,75 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_underwater" ID="{B148A2E9-BAE6-44EF-A28A-AC2F7BFC4875}">
+					<ChildrenList>
+						<Action Name="" ID="{B0808B1A-0D2A-4A02-B471-382EB62E8A12}" ShortID="942505021">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="underwater" ID="{82599C65-9A80-4EF1-92EC-8B169B394B6F}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_underwater" ID="{0C7C1091-CB42-4DD9-A2F4-7153729809BD}">
+					<ChildrenList>
+						<Action Name="" ID="{C4EDDB5A-8917-4C22-976B-F364F3DFF279}" ShortID="745136730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="underwater" ID="{82599C65-9A80-4EF1-92EC-8B169B394B6F}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_clapping_high" ID="{AA79AE0C-F778-4767-BD3B-CA0DC51728EF}">
+					<ChildrenList>
+						<Action Name="" ID="{04F0D126-D02F-4B8B-8D1C-794980998485}" ShortID="44243240">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clapping-high" ID="{73FF3448-036E-4ECC-85EA-AC287A4CB4D5}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_clapping_low" ID="{7CB13895-4E8A-44EF-B194-08C0C6E5B20A}">
+					<ChildrenList>
+						<Action Name="" ID="{AB4B0E13-631C-4683-8B8E-573AE95F7855}" ShortID="704576359">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clapping-low" ID="{7C32C1B3-7E3D-42BF-84F4-584B57FB05EB}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_clapping_mid" ID="{6E8FFC3B-0951-4963-A1EB-4C86D3EA5B67}">
+					<ChildrenList>
+						<Action Name="" ID="{1377E93B-CB63-403B-8BDE-F510BD3625FF}" ShortID="187788186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="clapping-mid" ID="{48971EAC-9140-44AB-A022-66783868A68C}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_party_horn" ID="{252B0D17-18A5-431D-9181-639B6C52121B}">
+					<ChildrenList>
+						<Action Name="" ID="{A79565D0-82B9-449F-BD11-16068FD67320}" ShortID="306567948">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="party-horn" ID="{7DD3D2F4-8119-4E7D-9F7B-E23D644406ED}" WorkUnitID="{F3D658EF-8222-416B-AE6A-8FF20E306C81}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

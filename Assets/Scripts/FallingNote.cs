@@ -38,6 +38,7 @@ public class FallingNote : MonoBehaviour
 
     public GameObject hitParticles;
 
+    static Dictionary<int, float> notePitches = new Dictionary<int, float>();
 
     public enum SustainType { none, start, end }
     [HideInInspector] public SustainType sustainType;
@@ -63,7 +64,36 @@ public class FallingNote : MonoBehaviour
 
         gemCueState = CueState.DontScore;
 
-
+        notePitches[97] = 554.37f;
+        notePitches[96] = 523.25f;
+        notePitches[95] = 493.88f;
+        notePitches[94] = 466.16f;
+        notePitches[93] = 440f;
+        notePitches[92] = 415.3f;
+        notePitches[91] = 392f;
+        notePitches[90] = 369.99f;
+        notePitches[89] = 349.23f;
+        notePitches[88] = 329.63f;
+        notePitches[87] = 311.13f;
+        notePitches[86] = 293.66f;
+        notePitches[85] = 277.18f;
+        notePitches[84] = 261.63f;
+        notePitches[83] = 246.94f;
+        notePitches[82] = 233.08f;
+        notePitches[81] = 220f;
+        notePitches[80] = 207.63f;
+        notePitches[79] = 196f;
+        notePitches[78] = 185f;
+        notePitches[77] = 174.61f;
+        notePitches[76] = 164.81f;
+        notePitches[75] = 155.56f;
+        notePitches[74] = 146.83f;
+        notePitches[73] = 138.59f;
+        notePitches[72] = 130.81f;
+        notePitches[71] = 123.47f;
+        notePitches[70] = 116.54f;
+        notePitches[69] = 110f;
+        notePitches[68] = 103.83f;
     }
 
 
@@ -106,5 +136,11 @@ public class FallingNote : MonoBehaviour
         //instantiate particles
         GameObject newParticles = Instantiate(hitParticles, transform.position + (Vector3.zero * 0.3f), transform.rotation);
         Destroy(newParticles, 0.8f);
+    }
+
+    //Return the pitch associated with the current note
+    public static float GetTargetPitch(int note)
+    {
+        return notePitches[note];
     }
 }
