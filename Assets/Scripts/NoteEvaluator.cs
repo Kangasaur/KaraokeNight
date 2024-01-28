@@ -15,7 +15,7 @@ public class NoteEvaluator : MonoBehaviour
 
     [HideInInspector] public float targetPitch; //Desired pitch value.
 
-    public float pitchWindow = 70f; //Scoring circles for the pitch tracking.
+    public float pitchWindow = 40f; //Scoring circle for the pitch tracking.
 
     public int score; //You know what this is, don't be stupid.
     public TMP_Text scoreDisplay;
@@ -28,7 +28,7 @@ public class NoteEvaluator : MonoBehaviour
         {
             if (Mathf.Abs(targetPitch - input.pitchValue) < pitchWindow)
             {
-                score += 10 * (int) (pitchWindow - (targetPitch - input.pitchValue));
+                score += 2 * (int) (pitchWindow - (targetPitch - input.pitchValue));
             }
         }
         scoreDisplay.text = score.ToString();

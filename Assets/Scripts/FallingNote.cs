@@ -118,7 +118,7 @@ public class FallingNote : MonoBehaviour
         //we set the evaluator to our note when we cross
         if (wwiseSync.GetMusicTimeInMS() > crossingTime && sustainType == SustainType.start && !set)
         {
-            noteEvaluator.targetPitch = pitch;
+            noteEvaluator.targetPitch = GetTargetPitch(note);
             set = true;
         }
     }
