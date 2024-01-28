@@ -129,35 +129,138 @@
 							</ObjectLists>
 							<Language>SFX</Language>
 						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Synth One" ID="{FAA81B29-4467-492A-9F77-29013B3E827C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="clapping-low" ID="{7C32C1B3-7E3D-42BF-84F4-584B57FB05EB}" ShortID="928446199">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AudioFileSource Name="2 people cheering" ID="{ED12F50C-EE1F-4D27-B406-43610DC2DAAB}">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
 							<AudioFile>2 people cheering.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="776421998"/>
 							</MediaIDList>
 						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="2 people cheering" ID="{ED12F50C-EE1F-4D27-B406-43610DC2DAAB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="clapping-high" ID="{73FF3448-036E-4ECC-85EA-AC287A4CB4D5}" ShortID="566192629">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AudioFileSource Name="huge crowd cheering" ID="{D33D8DAD-A840-424E-BF85-D55C0FD6CFF5}">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
 							<AudioFile>huge crowd cheering.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="10431226"/>
 							</MediaIDList>
 						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="huge crowd cheering" ID="{D33D8DAD-A840-424E-BF85-D55C0FD6CFF5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="clapping-mid" ID="{48971EAC-9140-44AB-A022-66783868A68C}" ShortID="535167153">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AudioFileSource Name="medium crowd cheering" ID="{49816AA9-7236-49F5-8450-087FDFB97195}">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
 							<AudioFile>medium crowd cheering.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="857293646"/>
 							</MediaIDList>
 						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="medium crowd cheering" ID="{49816AA9-7236-49F5-8450-087FDFB97195}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="party-horn" ID="{7DD3D2F4-8119-4E7D-9F7B-E23D644406ED}" ShortID="762982289">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AudioFileSource Name="party horn" ID="{3741ADE9-6FAA-44B2-B184-005B51CEC408}">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
 							<AudioFile>party horn.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="236513315"/>
 							</MediaIDList>
 						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="party horn" ID="{3741ADE9-6FAA-44B2-B184-005B51CEC408}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="underwater" ID="{82599C65-9A80-4EF1-92EC-8B169B394B6F}" ShortID="46423792">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{29EBD0AB-DF5F-4723-8FF3-A4684C70FAB8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
 						<AudioFileSource Name="underwater-ambience" ID="{5DA29BA0-CA18-48BC-B990-2AA10B5B81C1}">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>
+								</Reference>
+							</ReferenceList>
 							<Language>SFX</Language>
 							<AudioFile>underwater-ambience.wav</AudioFile>
 							<MediaIDList>
