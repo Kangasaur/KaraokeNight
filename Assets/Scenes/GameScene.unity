@@ -260,7 +260,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 7084755589366006729, guid: 1f35cfa1ed535a848b124d076fd79989, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6878132800334379575, guid: 1f35cfa1ed535a848b124d076fd79989, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 483296618}
   m_SourcePrefab: {fileID: 100100000, guid: 1f35cfa1ed535a848b124d076fd79989, type: 3}
 --- !u!1 &200504570
 GameObject:
@@ -340,6 +343,19 @@ Transform:
   - {fileID: 1595689706}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &483296613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6878132800334379575, guid: 1f35cfa1ed535a848b124d076fd79989, type: 3}
+  m_PrefabInstance: {fileID: 161217027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &483296618
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483296613}
+  m_Enabled: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteStartPrefab: {fileID: 4967615566911457948, guid: 20aeebf761fc9f34a8a3260d188d4de5, type: 3}
   noteEndPrefab: {fileID: 1981574462037955520, guid: b116466847c2cde43b4127e9a51a155b, type: 3}
+  lyricPrefab: {fileID: 3431936834308399855, guid: 591ba521595f9ea40a6c2f24780d75ce, type: 3}
   cueBeatOffset: 4
   wwiseSync: {fileID: 1844521061}
 --- !u!4 &988570782

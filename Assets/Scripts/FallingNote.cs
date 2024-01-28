@@ -15,6 +15,7 @@ public class FallingNote : MonoBehaviour
     public CueState gemCueState;
 
     public Vector3 destination;
+    public Vector3 offset;
 
     public int note;
     public float pitch;
@@ -22,6 +23,8 @@ public class FallingNote : MonoBehaviour
     private Vector3 velocity;
 
     bool set = false;
+
+    public float killzone;
 
     //may be needed to make the game feel more fair
     public float crossPositionOffset;
@@ -48,7 +51,7 @@ public class FallingNote : MonoBehaviour
         noteEvaluator = FindObjectOfType<NoteEvaluator>();
         controller = FindObjectOfType<Player2Controller>();
 
-        destination = GameObject.FindGameObjectWithTag("NowCrossing").transform.position;
+        destination = GameObject.FindGameObjectWithTag("NowCrossing").transform.position + offset;
 
         //we want to stay in the lane, so the destination will have the same x and y coordinates as the start.
         destination.x -= crossPositionOffset;
@@ -67,11 +70,11 @@ public class FallingNote : MonoBehaviour
     void Update()
     {
         transform.Translate(velocity * Time.deltaTime);
-        float posY = ((note / 6f) - 13.6667f) + (controller.pitchOffset / 100);
+        float posY = ((note / 6f) - 13.1667f) + (controller.pitchOffset / 100);
         if (sustain)
         {
             float distance = startPosition.x - transform.position.x;
-            sustainChild.transform.localPosition = new Vector3(distance * 2, 0, 0.01f);
+            sustainChild.transform.localPosition = new Vector3(distance * 2, 0, 0.02f);
             sustainChild.transform.localScale = new Vector2(distance * 4, 1f);
         }
         if (sustainChild == null && gemCueState == CueState.AlreadyScored) Destroy(gameObject);

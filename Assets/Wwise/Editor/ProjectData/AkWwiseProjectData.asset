@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 1d8e814aed50db418f9292075ed13cd5
       Path: Events\Default Work Unit\Play_VivaldiSpring
       maxAttenuation: 0
-      maxDuration: 90.666664
-      minDuration: 90.666664
+      maxDuration: 89.333336
+      minDuration: 89.333336
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

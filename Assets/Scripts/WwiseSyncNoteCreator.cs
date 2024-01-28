@@ -75,10 +75,35 @@ public class WwiseSyncNoteCreator : MonoBehaviour
         //we only want music-specific information, so we cast this info accordingly
         AkMusicSyncCallbackInfo _musicInfo;
         AkMIDIEventCallbackInfo _midiInfo;
+
+        //Using MIDI Beatmaps!
+        if (in_info is AkMIDIEventCallbackInfo)
+        {
+            //Debug.Log("midi callback");
+
+            _midiInfo = (AkMIDIEventCallbackInfo)in_info;
+
+            //pay attention to this debug log to get the byte number of your midi notes
+            //Debug.Log("MIDI note is: " + _midiInfo.byOnOffNote);
+
+            //note on cue
+            if (_midiInfo.byType == AkMIDIEventTypes.NOTE_ON)
+            {
+                //Use _midiInfo.byOnOffNote to translate to pitch
+                noteGenerator.GenerateCueStart(_midiInfo.byOnOffNote);
+            }
+            //called when midi note is released
+            else if (_midiInfo.byType == AkMIDIEventTypes.NOTE_OFF)
+            {
+                //_midiInfo.byOnOffNote
+                OnCueEnd.Invoke();
+            }
+        }
+
         //check if it's music callback (beat, marker, bar, grid etc)
         if (in_info is AkMusicSyncCallbackInfo)
         {
-            Debug.Log("music callback");
+            //Debug.Log("music callback");
             _musicInfo = (AkMusicSyncCallbackInfo)in_info;
 
             //we're going to use this switchboard to fire off different events depending on wwise sends
@@ -113,31 +138,6 @@ public class WwiseSyncNoteCreator : MonoBehaviour
 
             }
         }
-
-
-        //Using MIDI Beatmaps!
-        if (in_info is AkMIDIEventCallbackInfo)
-        {
-            //Debug.Log("midi callback");
-
-            _midiInfo = (AkMIDIEventCallbackInfo)in_info;
-
-            //pay attention to this debug log to get the byte number of your midi notes
-            Debug.Log("MIDI note is: " + _midiInfo.byOnOffNote);
-
-            //note on cue
-            if (_midiInfo.byType == AkMIDIEventTypes.NOTE_ON)
-            {
-                //Use _midiInfo.byOnOffNote to translate to pitch
-                noteGenerator.GenerateCueStart(_midiInfo.byOnOffNote);
-            }
-            //called when midi note is released
-            else if (_midiInfo.byType == AkMIDIEventTypes.NOTE_OFF)
-            {
-                //_midiInfo.byOnOffNote
-                OnCueEnd.Invoke();
-            }
-        }
     }
 
 
@@ -145,7 +145,8 @@ public class WwiseSyncNoteCreator : MonoBehaviour
 
     public void CustomCues(string cueName, AkMusicSyncCallbackInfo _musicInfo)
     {
-        //print CueName below note/wherever cues are played
+        //generate a lyric cue below the latest note
+        noteGenerator.GenerateLyric(cueName);
     }
 
     //we use this to evaluate player button presses and see if they are within the scoring windows

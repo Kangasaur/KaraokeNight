@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NoteGenerator : MonoBehaviour
 {
     FallingNote currentNote;
     public GameObject noteStartPrefab;
     public GameObject noteEndPrefab;
+    public GameObject lyricPrefab;
     //the "cue" here can be a number of things
     //for now it's just the spawn time offset (in number of beats)
     //right now, this assumes that each beatEvent will have the same cue offset.
@@ -31,7 +33,7 @@ public class NoteGenerator : MonoBehaviour
             GenerateCueEnd(currentNote.note);
         }
 
-        float yPosition = (midiNote / 6f) - 13.6667f;
+        float yPosition = (midiNote / 6f) - 13.1667f;
         GameObject newCue = Instantiate(noteStartPrefab, new Vector3(5.5f, yPosition, -5), Quaternion.identity);
 
         FallingNote fallingGem = newCue.GetComponent<FallingNote>();
@@ -50,9 +52,7 @@ public class NoteGenerator : MonoBehaviour
 
     public void GenerateCueEnd(int midiNote)
     {
-        
-        
-        float yPosition = (midiNote / 6f) - 13.6667f;
+        float yPosition = (midiNote / 6f) - 13.1667f;
         GameObject newCue = Instantiate(noteEndPrefab, new Vector3(5.5f, yPosition, -5), Quaternion.identity);
 
         FallingNote fallingGem = newCue.GetComponent<FallingNote>();
@@ -63,12 +63,26 @@ public class NoteGenerator : MonoBehaviour
 
         currentNote.sustain = false;
 
-        print(currentNote.note);
-        print(newCue.transform.position);
+        //print(currentNote.note);
+        //print(newCue.transform.position);
         SetGemTimings(fallingGem);
     }
 
-    
+    public void GenerateLyric(string text)
+    {
+        float yPosition = (currentNote.note / 6f) - 13.9667f;
+        GameObject newCue = Instantiate(lyricPrefab, new Vector3(5.2f, -2.25f, -5), Quaternion.identity);
+
+        newCue.GetComponent<TextMeshPro>().text = text;
+
+        FallingNote fallingGem = newCue.GetComponent<FallingNote>();
+        fallingGem.note = currentNote.note;
+
+        fallingGem.sustainType = FallingNote.SustainType.none;
+        fallingGem.sustain = false;
+
+        SetGemTimings(fallingGem);
+    }
 
     void SetGemTimings(FallingNote fallingGem)
     {
