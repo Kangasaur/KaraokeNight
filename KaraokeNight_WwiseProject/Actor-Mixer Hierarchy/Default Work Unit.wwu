@@ -129,9 +129,44 @@
 							</ObjectLists>
 							<Language>SFX</Language>
 						</SourcePlugin>
+						<AudioFileSource Name="2 people cheering" ID="{ED12F50C-EE1F-4D27-B406-43610DC2DAAB}">
+							<Language>SFX</Language>
+							<AudioFile>2 people cheering.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="776421998"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="huge crowd cheering" ID="{D33D8DAD-A840-424E-BF85-D55C0FD6CFF5}">
+							<Language>SFX</Language>
+							<AudioFile>huge crowd cheering.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="10431226"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="medium crowd cheering" ID="{49816AA9-7236-49F5-8450-087FDFB97195}">
+							<Language>SFX</Language>
+							<AudioFile>medium crowd cheering.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="857293646"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="party horn" ID="{3741ADE9-6FAA-44B2-B184-005B51CEC408}">
+							<Language>SFX</Language>
+							<AudioFile>party horn.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="236513315"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="underwater-ambience" ID="{5DA29BA0-CA18-48BC-B990-2AA10B5B81C1}">
+							<Language>SFX</Language>
+							<AudioFile>underwater-ambience.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="214420575"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Synth One" ID="{FAA81B29-4467-492A-9F77-29013B3E827C}" Platform="Linked"/>
+						<ActiveSource Name="underwater-ambience" ID="{5DA29BA0-CA18-48BC-B990-2AA10B5B81C1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
