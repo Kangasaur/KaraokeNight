@@ -43,6 +43,9 @@ public class NoteGenerator : MonoBehaviour
         fallingGem.sustainChild = newCue.GetComponentInChildren<Dummy>().gameObject.transform;
         fallingGem.sustainType = FallingNote.SustainType.start;
 
+        newCue.GetComponent<SpriteRenderer>().color = NoteToHue(midiNote);
+        newCue.GetComponentInChildren<Dummy>().GetComponent<SpriteRenderer>().color = NoteToHue(midiNote);
+
         currentNote = fallingGem;
 
         
@@ -62,6 +65,8 @@ public class NoteGenerator : MonoBehaviour
         fallingGem.sustainType = FallingNote.SustainType.end;
 
         currentNote.sustain = false;
+
+        newCue.GetComponent<SpriteRenderer>().color = NoteToHue(midiNote);
 
         //print(currentNote.note);
         //print(newCue.transform.position);
@@ -90,5 +95,10 @@ public class NoteGenerator : MonoBehaviour
         fallingGem.wwiseSync = wwiseSync;
 
         fallingGem.crossingTime = (float)wwiseSync.SetCrossingTimeInMS(cueBeatOffset);
+    }
+
+    Color NoteToHue(int note)
+    {
+        return Color.HSVToRGB((note % 12) / 12f, 0.7f, 1);
     }
 }
