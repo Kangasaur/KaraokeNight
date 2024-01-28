@@ -38,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{EF643F5F-528D-6749-93A2-DE1EE8D079A3}">
+		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{7B696AE7-1A02-2EA0-0FBB-30AD438AB40C}">
 			<ShortName>VivaldiSpring</ShortName>
 			<Path>VivaldiSpring.bnk</Path>
 			<Media>
@@ -66,7 +66,7 @@
 						<MediaRef Id="1039120711"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2625729712" Name="Play_VivaldiSpring" DurationType="OneShot" DurationMin="90.666664" DurationMax="90.666664">
+				<Event Id="2625729712" Name="Play_VivaldiSpring" DurationType="OneShot" DurationMin="88.333336" DurationMax="88.333336">
 					<MediaRefs>
 						<MediaRef Id="143987735"/>
 						<MediaRef Id="360853884"/>
@@ -83,5 +83,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA3F0921-F5EF-03C9-64D3-804AE0894E92}</FileHash>
+	<FileHash>{C4F5E985-BA8F-26FA-C0DB-3E546B8BD651}</FileHash>
 </SoundBanksInfo>
