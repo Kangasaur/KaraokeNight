@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class WwiseSyncNoteCreator : MonoBehaviour
 {
@@ -146,7 +147,8 @@ public class WwiseSyncNoteCreator : MonoBehaviour
     public void CustomCues(string cueName, AkMusicSyncCallbackInfo _musicInfo)
     {
         //generate a lyric cue below the latest note
-        noteGenerator.GenerateLyric(cueName);
+        if (cueName == "levelend") SceneManager.LoadScene("End Screen");
+        else noteGenerator.GenerateLyric(cueName);
     }
 
     //we use this to evaluate player button presses and see if they are within the scoring windows

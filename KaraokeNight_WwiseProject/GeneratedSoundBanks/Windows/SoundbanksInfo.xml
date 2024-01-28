@@ -38,7 +38,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{E9C89814-F1E8-933D-EED9-09CE7EF9F2A5}">
+		<SoundBank Id="1804423153" Type="User" Language="SFX" Hash="{58F0F5B3-166A-F452-B74D-15FC1CDD8C6D}">
 			<ShortName>VivaldiSpring</ShortName>
 			<Path>VivaldiSpring.bnk</Path>
 			<Media>
@@ -83,5 +83,5 @@
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{013BB1F7-8593-D318-176A-74CFFD5C76F6}</FileHash>
+	<FileHash>{D89039AD-D163-447B-7E23-EA12415A738F}</FileHash>
 </SoundBanksInfo>
