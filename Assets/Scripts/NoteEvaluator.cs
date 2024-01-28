@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class NoteEvaluator : MonoBehaviour
 {
-    [HideInInspector] public float currentPitch;
-    [HideInInspector] public float pitchOffset; //This is the value controlled by P2 (scroll wheel)
+    /*
+     * This script takes the pitchValue variable from the AudioAnalyzer and checks it against the desired pitch, represented by targetPitch.
+     * This script stores targetPitch.
+     * The pitchWindow variable determines how close the player needs to be to improve their score.
+     * pitchWindow is also used in an inverse equation to increase the score. The closer you are to targetPitch, the better the score, scaling linearly backwards.
+     * score is also stored in this script, and is displayed in the UI object which this script is attached to.
+     */
 
-    public float pitchWindow = 30; //how lenient the pitch tracking is
+    [HideInInspector] public float targetPitch; //Desired pitch value.
+
+    public float pitchWindow = 70f; //Scoring circles for the pitch tracking.
+
+    public int score; //You know what this is, don't be stupid.
 
     public AudioAnalyzer input;
 
-    private void Update()
+    private void Update() //Actually update the score depending on how close the pitchValue with pitchOffset is to targetPitch.
     {
-        if (currentPitch != 0)
+        if (targetPitch != 0)
         {
-            if (Mathf.Abs(currentPitch + pitchOffset - input.pitchValue) < pitchWindow)
+            if (Mathf.Abs(targetPitch - input.pitchValue) < pitchWindow)
             {
-                //increment the score
+                score += 10 * (int) (pitchWindow - (targetPitch - input.pitchValue));
             }
         }
     }

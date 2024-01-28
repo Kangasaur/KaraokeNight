@@ -16,6 +16,8 @@ public class AudioAnalyzer : MonoBehaviour
     public AudioClip audioClip;
     public string selectedDevice;
 
+    public Player2Controller controller;
+
     private const int SAMPLE_SIZE = 1024;
 
     //Some values that will be taken from the microphone.
@@ -28,6 +30,11 @@ public class AudioAnalyzer : MonoBehaviour
     private float[] samples;
     private float[] spectrum;
     private float sampleRate;
+
+    //Pitch averaging data.
+    public int avgRange;
+    public List<float> avgValues = new List<float>();
+    public float avgSum;
 
     //Assign the actual microphone used and take the device dictated by the user's computer.
     private void Start()
@@ -93,8 +100,24 @@ public class AudioAnalyzer : MonoBehaviour
 
         pitchValue = freqN * (sampleRate) / SAMPLE_SIZE;
 
-        pitchValue = (pitchValue * 500f) / 10000f;
+        pitchValue = ((pitchValue * 430f) / 11000f) + 170f;
 
         pitchValue = Mathf.Round(pitchValue / 5.0f) * 5.0f;
+
+        //Averaging out up to five frames worth of values. Resets after those five frames.
+        avgValues.Add(pitchValue);
+        for(i = 0; i < avgValues.Count; i++)
+        {
+            avgSum += avgValues[i];
+            pitchValue = avgSum / avgValues.Count;
+        }
+        avgSum = 0f;
+
+        if(avgValues.Count >= avgRange)
+        {
+            avgValues.Clear();
+        }
+        
+        controller.ScrollAdjust();
     }
 }

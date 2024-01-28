@@ -9,6 +9,7 @@ public class FallingNote : MonoBehaviour
 
     public WwiseSyncNoteCreator wwiseSync;
     NoteEvaluator noteEvaluator;
+    Player2Controller controller;
 
     public enum CueState { DontScore = -1, Early = 0, OK = 1, Good = 2, Perfect = 3, Late = 4, AlreadyScored = 5 }
     public CueState gemCueState;
@@ -45,6 +46,7 @@ public class FallingNote : MonoBehaviour
         startPosition = transform.position;
 
         noteEvaluator = FindObjectOfType<NoteEvaluator>();
+        controller = FindObjectOfType<Player2Controller>();
 
         destination = GameObject.FindGameObjectWithTag("NowCrossing").transform.position;
 
@@ -65,7 +67,7 @@ public class FallingNote : MonoBehaviour
     void Update()
     {
         transform.Translate(velocity * Time.deltaTime);
-        float posY = ((note / 6f) - 13.6667f) + (noteEvaluator.pitchOffset / 100);
+        float posY = ((note / 6f) - 13.6667f) + (controller.pitchOffset / 100);
         if (sustain)
         {
             float distance = startPosition.x - transform.position.x;
@@ -83,7 +85,7 @@ public class FallingNote : MonoBehaviour
         //we set the evaluator to our note when we cross
         if (wwiseSync.GetMusicTimeInMS() > crossingTime && sustainType == SustainType.start && !set)
         {
-            noteEvaluator.currentPitch = pitch;
+            noteEvaluator.targetPitch = pitch;
             set = true;
         }
     }
