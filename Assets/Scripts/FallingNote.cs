@@ -71,7 +71,7 @@ public class FallingNote : MonoBehaviour
         if (sustain)
         {
             float distance = startPosition.x - transform.position.x;
-            sustainChild.transform.localPosition = new Vector3(distance * 2, 0, 0.5f);
+            sustainChild.transform.localPosition = new Vector3(distance * 2, 0, 0.01f);
             sustainChild.transform.localScale = new Vector2(distance * 4, 1f);
         }
         if (sustainChild == null && gemCueState == CueState.AlreadyScored) Destroy(gameObject);
