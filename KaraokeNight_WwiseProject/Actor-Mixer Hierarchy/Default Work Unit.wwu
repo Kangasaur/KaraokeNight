@@ -65,6 +65,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="miditarget" ID="{51C870D1-6B21-490C-B902-398EF2B0B571}" ShortID="252324037">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-96</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{667F9A0A-01A4-406F-92F8-3621A4164B6F}"/>

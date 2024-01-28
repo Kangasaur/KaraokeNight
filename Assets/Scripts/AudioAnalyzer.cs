@@ -54,7 +54,7 @@ public class AudioAnalyzer : MonoBehaviour
     private void Update()
     {
         AnalyzeSound();
-        Debug.Log(pitchValue);
+        //Debug.Log(pitchValue);
     }
 
     //Take the input from the microphone and turn it into a readable worldspace value.

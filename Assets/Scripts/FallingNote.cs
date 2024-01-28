@@ -67,12 +67,12 @@ public class FallingNote : MonoBehaviour
     void Update()
     {
         transform.Translate(velocity * Time.deltaTime);
-        float posY = ((note / 10) - 4) + (controller.pitchOffset / 100);
+        float posY = ((note / 6f) - 13.6667f) + (controller.pitchOffset / 100);
         if (sustain)
         {
-            float distance = startPosition.y - transform.position.y;
-            sustainChild.transform.localPosition = new Vector3(0f, distance / 2, 0.5f);
-            sustainChild.transform.localScale = new Vector2(0.35f, distance);
+            float distance = startPosition.x - transform.position.x;
+            sustainChild.transform.localPosition = new Vector3(distance * 2, 0, 0.5f);
+            sustainChild.transform.localScale = new Vector2(distance * 4, 1f);
         }
         if (sustainChild == null && gemCueState == CueState.AlreadyScored) Destroy(gameObject);
         UpdateWindow();
